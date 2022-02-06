@@ -35,7 +35,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 	res.send(`
 <html lang="en">
 <head>
-  	<title>${data.title || 'Thread Logs'}</title>
+  	<title>${data.title || 'Registro'}</title>
   	<meta charset="UTF-8">
   	<meta name="description" content="Log from ${data.recipient.username}.">
   	<link rel="icon" href="${data.recipient.avatarURL}" type="image/icon type">
@@ -164,15 +164,14 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         </div>
 
         <div class="topnav-links">
-            <a href="https://modmail.phodit.xyz">ModMail Project</a>
-            <a href="https://discord.gg/aUNhdFD">Support Server</a>
+
         </div>
 
     </div>
     
     <div class="main">
     		<div>
-            <h2>Log from user ${data.recipient.username}#${data.recipient.discriminator}</h2>
+            <h2>Registros del usuario ${data.recipient.username}#${data.recipient.discriminator}</h2>
             ${data.note ? `<p class="content-text">Note: ${data.note}</p>` : ''}
             <hr>
         </div>
