@@ -160,7 +160,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 
         <div class="topnav-title">
             <img src="${data.recipient.avatarURL}" style="float: left; width: 63px; height: 63px">
-            <p>${data.title || 'Thread Logs'}</p>
+            <p>${data.title || 'Registros'}</p>
         </div>
 
         <div class="topnav-links">
